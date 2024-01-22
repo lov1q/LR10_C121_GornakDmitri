@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="Gray">
-        <DockPanel Grid.Row="0" Margin="170,0,0,360" >
-            <Button Name="Exit" Content="Выход" Width="90" Click="Exit_Click" DockPanel.Dock="Right" Height="44"/>
+        <DockPanel Grid.Row="0" Margin="170,0,10,360" >
+            <Button Name="Exit" Content="Выход" Width="80" Click="Exit_Click" DockPanel.Dock="Right" Height="44"/>
             <TextBlock Text="СОРЕВНОВАНИЕ" 
                    DockPanel.Dock="Left" 
                    HorizontalAlignment="Center" VerticalAlignment="Center"
@@ -21,10 +21,8 @@
             <Button x:Name="AddTeams" Content="Добавить команду" Click="AddTeams_Click"/>
             <Label/>
             <Label/>
-            <Label/>
-            <Label/>
-            <Button Content="XML Save" Name="XMLSave" Click="XMLSave_Click"/>
-            <Button Content="XML Open" Name="XMLOpen" Click="XMLOpen_Click"/>
+            <Button Content="Json Save" Name="XMLSave" Click="XMLSave_Click"/>
+            <Button Content="Json Open" Name="XMLOpen" Click="XMLOpen_Click"/>
             <Label/>
             <Button Content="Поиск по типу матча" Click="SearchB_Click"/>
             <ComboBox x:Name="SearchCB" Width="160" Height="21"/>
@@ -44,7 +42,7 @@
         <Label Content="Тип Стадиона:" HorizontalAlignment="Left" Margin="495,161,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label Content="Результат игры:" HorizontalAlignment="Left" Margin="649,159,0,0" VerticalAlignment="Top" FontSize="16"/>
         <ComboBox x:Name="resultmatchCB" HorizontalAlignment="Left" Margin="651,195,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid x:Name="TeamsDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="183,270,0,0"/>
+        <DataGrid x:Name="TeamsDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="170,270,10,10"/>
         <TextBox x:Name="frsnameTextBox" HorizontalAlignment="Left" Margin="193,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Название 1 команды:" HorizontalAlignment="Left" Margin="190,90,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="secnameTextBox" HorizontalAlignment="Center" Margin="0,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
