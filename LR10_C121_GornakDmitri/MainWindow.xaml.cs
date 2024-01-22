@@ -227,6 +227,7 @@ namespace LR10_C121_GornakDmitri
             TeamsDataGrid.ItemsSource = filteredTeams;
         }
 
+
         private void Excel_Click(object sender, RoutedEventArgs e)
         {
         //    var application = new Microsoft.Office.Interop.Excel.Application();
@@ -291,6 +292,20 @@ namespace LR10_C121_GornakDmitri
                 table.Cell(row, 6).Range.Text = teams[row - 2].TypeStadion.ToString();
                 table.Cell(row, 7).Range.Text = teams[row - 2].TeamfirstPoints.ToString();
                 table.Cell(row, 8).Range.Text = teams[row - 2].TeamsecondPoints.ToString();
+            }
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            // Получение выделенного элемента из DataGrid
+            var selectedOrder = TeamsDataGrid.SelectedItem as Teams;
+
+            // Удаление элемента из списка заказов
+            if (selectedOrder != null)
+            {
+                teams.Remove(selectedOrder);
+                TeamsDataGrid.ItemsSource = null; // Очистка ItemsSource
+                TeamsDataGrid.ItemsSource = teams; // Установка списка заказов в ItemsSource
             }
         }
     }

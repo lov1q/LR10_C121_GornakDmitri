@@ -21,19 +21,20 @@
             <Button x:Name="AddTeams" Content="Добавить команду" Click="AddTeams_Click"/>
             <Label/>
             <Label/>
-            <Button Content="Выход" Click="Exit_Click"/>
             <Label/>
-            <Button Content="Serial Save" Name="SerialSave"/>
-            <Button Content="Serial Open" Name="SerialOpen"/>
             <Label/>
             <Button Content="XML Save" Name="XMLSave" Click="XMLSave_Click"/>
             <Button Content="XML Open" Name="XMLOpen" Click="XMLOpen_Click"/>
             <Label/>
             <Button Content="Поиск по типу матча" Click="SearchB_Click"/>
             <ComboBox x:Name="SearchCB" Width="160" Height="21"/>
-            <Label Content=""/>
+            <Label Content="" Height="11"/>
             <Button Content="Excel" Click="Excel_Click"/>
             <Button Content="Word" Click="Word_Click"/>
+            <Label Content="" Height="14"/>
+            <Button Content="Очистить поля" Click="ClearFieldsButton_Click"/>
+            <Button Content="Удалить строку" Click="Delete_Click"/>
+            <Button Content="Выход" Click="Exit_Click"/>
         </StackPanel>
         <ComboBox x:Name="typematchCB" HorizontalAlignment="Left" Margin="193,195,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="stadionCB" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="120"/>
@@ -50,5 +51,6 @@
         <Label Content="Название 2 команды:" HorizontalAlignment="Center" Margin="0,90,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="datematchDP" HorizontalAlignment="Left" Margin="502,129,0,0" VerticalAlignment="Top"/>
         <Label Content="Дата матча:" HorizontalAlignment="Left" Margin="515,90,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="240,-41,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
