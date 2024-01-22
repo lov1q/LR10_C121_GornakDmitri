@@ -22,8 +22,7 @@ namespace LR10_C121_GornakDmitri
         public int TeamfirstPoints { get; set; }
         public int TeamsecondPoints { get; set; }
 
-        public int Id { get; set; }
-        //public double Result => SetOutcome();
+        public Teams() { }
 
         public Teams(string teamfirst, string teamsecond, DateTime? dateMatch, string typematch, string stadion, string typeStadion, string proverka)
         {

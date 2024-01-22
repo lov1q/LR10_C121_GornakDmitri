@@ -29,6 +29,11 @@
             <Button Content="XML Save" Name="XMLSave" Click="XMLSave_Click"/>
             <Button Content="XML Open" Name="XMLOpen" Click="XMLOpen_Click"/>
             <Label/>
+            <Button Content="Поиск по типу матча" Click="SearchB_Click"/>
+            <ComboBox x:Name="SearchCB" Width="160" Height="21"/>
+            <Label Content=""/>
+            <Button Content="Excel" Click="Excel_Click"/>
+            <Button Content="Word" Click="Word_Click"/>
         </StackPanel>
         <ComboBox x:Name="typematchCB" HorizontalAlignment="Left" Margin="193,195,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="stadionCB" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="120"/>
